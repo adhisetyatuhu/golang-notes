@@ -58,7 +58,7 @@ Slices are like references to arrays
 | `fruits[0:2]` | `[Apple Banana]`                                  | Elements from index 0 to before index 2 |
 | `fruits[2:2]` | `[]`                                              | An empty slice |
 | `fruits[:]`   | `[Apple Banana Cherry Date Elderberry Fig Grape]` | All elements |
-| `fruits[2:]`  | `[Cherry Date Elderberry Fig Grape]               | Elements from index 2 to the last index |
+| `fruits[2:]`  | `[Cherry Date Elderberry Fig Grape]`               | Elements from index 2 to the last index |
 | `fruits[:2]`  | `[Apple Banana]`                                  | Every elements before index 2, kinda similar to `fruits[0:2]` |
 
 ### Slice implementation (delete)
