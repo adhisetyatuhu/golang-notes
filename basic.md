@@ -38,7 +38,7 @@ total := 0.0
 for _, score := range scores {
   total += score
 }
-fmt.Printf("My total score is %.2f\n", total*100)
+fmt.Printf("My total score in percent is %.2f\n", total*100)
 ```
 
 ## Slice
