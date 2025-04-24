@@ -61,7 +61,7 @@ Slices are like references to arrays
 | `fruits[2:]`  | `[Cherry Date Elderberry Fig Grape]`               | Elements from index 2 to the last index |
 | `fruits[:2]`  | `[Apple Banana]`                                  | Every elements before index 2, kinda similar to `fruits[0:2]` |
 
-### Slice implementation (delete)
+### Slice implementation (delete an element)
 ```go
 fruits := []string{"Apple", "Banana", "Cherry", "Date", "Elderberry"}
 
@@ -71,4 +71,4 @@ fruits = append(fruits[:2], fruits[deletedFruitIndex+1:]...)
 fmt.Println(fruits)
 // Output: [Apple Banana Date Elderberry]
 ```
-Did you notice in the code above, we use spread operator to append the fruits? The spread operator (`...`) is used to "unpack" the elements of the slice `fruits[deletedFruitIndex+1:]` and append them as individual elements to the slice `fruits[:2]`. It is because The append function in Go expects individual elements (not a slice) as its arguments after the first slice. Therefore the spread operator is used so that so that the slice are passed in elements (as individual arguments) to append.
+Did you notice in the code above, we use [spread operator](https://github.com/adhisetyatuhu/golang-notes/blob/main/variadic-funtion.md#menggunakan-slice-sebagai-argumen) to append the fruits? The spread operator (`...`) is used to "unpack" the elements of the slice `fruits[deletedFruitIndex+1:]` and append them as individual elements to the slice `fruits[:2]`. It is because The append function in Go expects individual elements (not a slice) as its arguments after the first slice. Therefore the spread operator is used so that so that the slice are passed in elements (as individual arguments) to append.
