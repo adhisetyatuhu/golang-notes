@@ -1,6 +1,6 @@
 ## Variadic Function
-Variadic function di Go adalah fungsi yang dapat menerima sejumlah argumen yang tidak terbatas 
-dari tipe tertentu. Argumen-argumen ini dikumpulkan menjadi sebuah slice di dalam fungsi. Variadic 
+Variadic function di Go adalah _function_ yang dapat menerima sejumlah argumen yang tidak terbatas 
+dari tipe tertentu. Argumen-argumen ini dikumpulkan menjadi sebuah slice di dalam _function_. Variadic 
 function dideklarasikan dengan menggunakan tiga titik (`...`) sebelum tipe data parameter terakhir.
 
 ### Contoh
@@ -34,5 +34,5 @@ nums := []int{1, 2, 3, 4}
 fmt.Println(sum(nums...)) // Output: 10
 ```
 > #### Catatan
-> - Variadic parameter harus menjadi parameter terakhir dalam deklarasi fungsi.
-> - Anda hanya dapat memiliki satu variadic parameter dalam sebuah fungsi.
+> - Variadic parameter harus menjadi parameter terakhir dalam deklarasi _function_.
+> - Anda hanya dapat memiliki satu variadic parameter dalam sebuah _function_.
