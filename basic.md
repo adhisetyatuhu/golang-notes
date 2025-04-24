@@ -71,3 +71,4 @@ fruits = append(fruits[:2], fruits[deletedFruitIndex+1:]...)
 fmt.Println(fruits)
 // Output: [Apple Banana Date Elderberry]
 ```
+Did you notice in the code above, we use spread operator to append the fruits? The spread operator (`...`) is used to "unpack" the elements of the slice `fruits[deletedFruitIndex+1:]` and append them as individual elements to the slice `fruits[:2]`. It is because The append function in Go expects individual elements (not a slice) as its arguments after the first slice. Therefore the spread operator is used so that so that the slice are passed in elements (as individual arguments) to append.
