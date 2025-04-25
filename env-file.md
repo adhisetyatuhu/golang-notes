@@ -10,7 +10,7 @@ API_KEY=your_api_key_here
 ## 2. Install the `godotenv` Package
 Use the `godotenv` package to load the `.env` file into your Go application. Install it using 
 the following command:
-```
+```go.mod
 go get github.com/joho/godotenv
 ```
 
