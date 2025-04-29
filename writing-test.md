@@ -40,3 +40,5 @@ func TestHello(t *testing.T) {
 }
 
 ```
+
+[Here is a good reference to learn go with TDD](https://quii.gitbook.io/learn-go-with-tests/)
