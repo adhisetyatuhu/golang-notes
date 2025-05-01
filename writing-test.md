@@ -41,4 +41,7 @@ func TestHello(t *testing.T) {
 
 ```
 
+> ### Note
+> Use `!reflect.DeepEqual` to compare slices
+
 [Here is a good reference to learn go with TDD](https://quii.gitbook.io/learn-go-with-tests/)
