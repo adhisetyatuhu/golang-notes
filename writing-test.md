@@ -42,6 +42,11 @@ func TestHello(t *testing.T) {
 ```
 
 > ### Note
-> Use `!reflect.DeepEqual` to compare slices (note that it is not type-safe, so it will compile regardless of the types being compared)
+> Use `!reflect.DeepEqual` to compare slices (note that it is not type-safe, so it
+> will compile regardless of the types being compared). From **Go 1.21**, slices standard
+> package is available, which has `slices.Equal` function to do a simple shallow compare
+> on slices, where you don't need to worry about the types like the above case. Note
+> that this function expects the elements to be comparable. So, it can't be applied to
+> slices with non-comparable elements like 2D slices.
 
 [Here is a good reference to learn go with TDD](https://quii.gitbook.io/learn-go-with-tests/)
