@@ -42,6 +42,6 @@ func TestHello(t *testing.T) {
 ```
 
 > ### Note
-> Use `!reflect.DeepEqual` to compare slices
+> Use `!reflect.DeepEqual` to compare slices (note that it is not type-safe, so it will compile regardless of the types being compared)
 
 [Here is a good reference to learn go with TDD](https://quii.gitbook.io/learn-go-with-tests/)
