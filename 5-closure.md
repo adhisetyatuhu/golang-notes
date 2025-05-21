@@ -42,7 +42,7 @@ func main() {
 2. **Stateful**: Closures can maintain state between function calls.
 3. **Independent Instances**: Each closure instance has its own copy of the captured variables.
 
----
+<br />
 
 ## Practical Use Cases
 1. **Encapsulation of State**: Closures are often used to encapsulate state in a function without exposing it globally.
